@@ -45,4 +45,17 @@
   }
 }
 
+.card-profile img {
+  height: 80px;
+  width: 80px;
+}
 
+.card-profile {
+  display: flex;
+  align-items: center;
+}
+
+.card-profile-details{
+  padding-left: 25px;
+  margin-top: 20px;
+}

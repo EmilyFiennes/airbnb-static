@@ -19,7 +19,7 @@
             <option value="4">4 people</option>
             <option value="5">5 people</option>
           </select>
-          <button type="submit" class="btn btn-info btn-lg">Search</button>
+          <button type="submit" class="btn btn-primary btn-lg">Search</button>
         </form>
       </div>
     </div>
@@ -54,47 +54,22 @@
     <div class="wrapper-grey padded">
       <div class="container">
         <div class="row">
+        <% data.flats.each do |owner, flat| %>
         <div class="col-xs-12 col-sm-4">
-        <%link_to "#", class: "card-link" do%>
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-london.jpeg');">
-            <% end %>
-          <div class="card-category">London</div>
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path flat.picture %>');">
+          <div class="card-category"><%= flat.city %></div>
           <div class="card-description">
-            <h2>Alice's home</h2>
-            <p>London calling</p>
+            <h2><%= flat.owner %></h2>
+            <p><%= flat.summary %></p>
           </div>
-          <%= image_tag "alice.jpg", alt: "alice photo", class: "card-user avatar"%>
+          <%= image_tag flat.owner_picture, alt: "owner photo", class: "card-user avatar"%>
+          <%= link_to "#", "flats/{owner}.html", class: "card-link" %>
           </div>
         </div>
-
-        <div class="col-xs-12 col-sm-4">
-        <%link_to "#", class: "card-link" do%>
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-brussels.jpeg');">
-            <% end %>
-          <div class="card-category">Brussels</div>
-          <div class="card-description">
-            <h2>European buzz</h2>
-            <p>Rooftop abode</p>
-          </div>
-          <%= image_tag "emily.jpg", alt: "emily photo", class: "card-user avatar"%>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4">
-        <%link_to "#", class: "card-link" do%>
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/card-paris.jpg');">
-            <% end %>
-          <div class="card-category">Paris</div>
-          <div class="card-description">
-            <h2>Pierre's appartment</h2>
-            <p>Parisien charm in the 9ème</p>
-          </div>
-          <%=image_tag "pierre.jpg", alt: "pierre photo", class: "card-user avatar"%>
-          </div>
-        </div>
+        <% end %>
+      </div>
       </div>
     </div>
-  </div>
 
     <!-- Your newsletter code -->
     <div class="text-center padded" id="newsletter">

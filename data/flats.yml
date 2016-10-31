@@ -1,0 +1,32 @@
+pierre:
+  owner_name: Pierre
+  picture: card-paris.jpg
+  owner_picture: pierre.jpg
+  name: Pierre's home
+  summary: Charming room in Montmartre
+  city: Paris, France
+  wifi: true
+  sleeps: 6
+  rating: 3
+alice:
+  owner_name: Alice
+  picture: card-london.jpeg
+  owner_picture: alice.jpg
+  name: Alice's home
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  wifi: false
+  sleeps: 4
+  rating: 3
+seb:
+  owner_name: Sebastian
+  picture: card-bordeaux.jpg
+  owner_picture: seb.jpg
+  name: Seb's home
+  summary: Great spot in Bordeaux
+  city: Bordeaux, France
+  wifi: true
+  sleeps: 2
+  rating: 2
+
+
