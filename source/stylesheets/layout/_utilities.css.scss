@@ -10,6 +10,12 @@
   padding-bottom: 5em;
 }
 
+.padded i {
+  margin-right: 10px;
+  color: #469AE0;
+  text-decoration: none;
+}
+
 // Backgrounds
 .bg-text {
   background: #4a4a4a;
@@ -22,4 +28,9 @@
 }
 .bg-facebook {
   background: #3b5998;
+}
+
+// Links
+.a:hover {
+  text-decoration: none;
 }
