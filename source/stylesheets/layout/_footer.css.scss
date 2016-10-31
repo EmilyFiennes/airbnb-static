@@ -7,18 +7,16 @@
 #footer ul {
   margin-top: 10px;
   padding-left: 20px;
-}
-
-#footer a {
+  a {
   color: #CCCCCC;
   font-size: 30px;
   letter-spacing: 20px;
   transition: color 0.5s ease;
-}
-
-#footer a:hover {
-  color: #5BC0DE;
-  text-decoration: none;
+  &:hover {
+    color: #5BC0DE;
+    text-decoration: none;
+    }
+  }
 }
 
 #footer p {
